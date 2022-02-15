@@ -27,6 +27,5 @@ public class Person extends AbstractPersistable<Long> {
     private String phoneNumber;
 
     @CreationTimestamp
-    @NotNull
     private Instant createdDate;
 }

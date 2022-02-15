@@ -1,11 +1,7 @@
 version: '3.5'
 
-services:
-  db:
-    image: postgres
-    restart: always
-    environment:
-      POSTGRES_HOST_AUTH_METHOD: trust
-    container_name: telia-haaste-db
+services:  
+  backend:
+    image: telia:1.0-SNAPSHOT
     ports:
-      - 5432:5432
+      - 8080:8080
