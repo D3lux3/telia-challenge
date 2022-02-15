@@ -2,6 +2,6 @@ version: '3.5'
 
 services:  
   backend:
-    image: telia:1.0-SNAPSHOT
+    build: .
     ports:
       - 8080:8080
