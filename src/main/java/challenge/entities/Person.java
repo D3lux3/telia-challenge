@@ -8,6 +8,7 @@ import org.springframework.data.jpa.domain.AbstractPersistable;
 
 import javax.validation.constraints.NotEmpty;
 import javax.persistence.Entity;
+import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
 import java.time.Instant;
@@ -26,5 +27,6 @@ public class Person extends AbstractPersistable<Long> {
     private String phoneNumber;
 
     @CreationTimestamp
+    @NotNull
     private Instant createdDate;
 }
